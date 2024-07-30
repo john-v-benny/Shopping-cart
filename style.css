@@ -1,0 +1,124 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+
+body{
+    font-family: "Red Hat Text", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;  
+    font-style: normal;
+    background: hsl(20, 50%, 98%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    padding: 100px;
+    margin-left: 50px;
+    display: flex;
+    width: auto;
+    align-items: start;
+}
+
+.display{
+    width: 1000px;
+}
+
+.grid{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-row: 300px 300px 300px;
+    gap: 50px 50px;
+    width: 1000px;
+}
+
+.item{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    float: none;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.fw-100 {
+    font-weight: lighter;
+    color: hsl(12, 20%, 44%);
+}
+.fw-200 {
+    font-weight: bold;
+}
+
+.fw-3{
+    font-weight: bold;
+    color: red;
+}
+
+.pic{
+    border-radius: 10px;
+}
+
+.text{
+    padding: 10px;
+    padding-top: 40px;
+}
+
+.addcart{
+    background-color: white;
+    height: 40px;
+    width: 233px;
+    position: absolute;
+    top: 265px;
+    left: 33px;
+    border: 2px solid hsl(12, 20%, 44%);
+    border-radius: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addcart img{
+    margin-right: 10px;
+}
+
+.cart{
+    background: red;
+    width: 500px;
+    margin-left: 100px;
+    min-height: 100px;
+    border-radius: 20px;
+    padding: 20px;
+    background: white;
+}
+
+.eco{
+    background: hsl(13, 31%, 94%);
+    border-radius: 20px;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.confirm{
+    margin-top: 10px;
+    width: 460px;
+    border-radius: 30px;
+    background-color: red;
+    border: none;
+    height: auto;
+    padding: 20px;
+    color: white;
+}
