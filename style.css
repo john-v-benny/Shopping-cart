@@ -89,12 +89,17 @@ body{
     align-items: center;
 }
 
+.addcart:hover{
+    background-color: red;
+    color: white;
+}
+
 .addcart img{
     margin-right: 10px;
 }
 
+
 .cart{
-    background: red;
     width: 500px;
     margin-left: 100px;
     min-height: 100px;
@@ -122,3 +127,26 @@ body{
     padding: 20px;
     color: white;
 }
+
+#ordertotal{
+    font-weight: bold;
+    padding-top: 20px;
+    font-size: larger;
+}
+
+.clear{
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+}
+
+.order-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+

@@ -19,23 +19,23 @@
       <div class="grid">
         <div class="item">
           <img class="pic" src="assets/images/image-waffle-desktop.jpg" alt="">
-          <button class="addcart">
+          <button id="addcart_button" class="addcart"  data-item="Waffle with Berries" data-price="6.50">
             <img src="assets/images/icon-add-to-cart.svg"  alt="">
             <p class="fw-200">Add to Cart</p>
           </button>
           <div class="text"><p class="fw-100">Waffle</p>
-          <p class="fw-200">Waffle with Berries</p>
+          <p class="fw-200" id="item_name">Waffle with Berries</p>
           <p class="fw-3">$6.50</p>
           </div>
 
         </div>
         <div class="item">
           <img class="pic" src="assets/images/image-creme-brulee-desktop.jpg" alt="">
-          <button class="addcart">
+          <button id="addcart_button" class="addcart" data-item="Vanilla Bean Crème Brûlée" data-price="7.00">
             <img src="assets/images/icon-add-to-cart.svg"  alt="">
             <p class="fw-200">Add to Cart</p>
           </button>
-          <div class="text"><p class="fw-100">Crème Brûlée</p>
+          <div class="text" id="item_name"><p class="fw-100">Crème Brûlée</p>
           <p class="fw-200">Vanilla Bean Crème Brûlée</p>
           <p class="fw-3">$7.00</p>
           </div>
@@ -43,7 +43,7 @@
         </div>
         <div class="item">
           <img class="pic" src="assets/images/image-macaron-desktop.jpg" alt="">
-          <button class="addcart">
+          <button class="addcart" data-item="Macaron Mix of Five" data-price="8.00">
             <img src="assets/images/icon-add-to-cart.svg"  alt="">
             <p class="fw-200">Add to Cart</p>
           </button>
@@ -56,7 +56,7 @@
         </div>
         <div class="item">
           <img class="pic" src="assets/images/image-tiramisu-desktop.jpg" alt="">
-          <button class="addcart">
+          <button class="addcart" data-item="Classic Tiramisu" data-price="5.50">
             <img src="assets/images/icon-add-to-cart.svg"  alt="">
             <p class="fw-200">Add to Cart</p>
           </button>
@@ -68,7 +68,7 @@
         </div>
         <div class="item">
           <img class="pic" src="assets/images/image-baklava-desktop.jpg" alt="">
-          <button class="addcart">
+          <button class="addcart" data-item="Pistachio Baklava" data-price="4.00">
             <img src="assets/images/icon-add-to-cart.svg"  alt="">
             <p class="fw-200">Add to Cart</p>
           </button>
@@ -81,7 +81,7 @@
         </div>
         <div class="item">
           <img class="pic" src="assets/images/image-panna-cotta-desktop.jpg" alt="">
-          <button class="addcart">
+          <button class="addcart" data-item="Vanilla Panna Cotta" data-price="6.50">
             <img src="assets/images/icon-add-to-cart.svg"  alt="">
             <p class="fw-200">Add to Cart</p>
           </button>
@@ -93,7 +93,8 @@
           
         </div>
         <div class="item">
-          <img class="pic" src="assets/images/image-meringue-desktop.jpg" alt=""><button class="addcart">
+          <img class="pic" src="assets/images/image-meringue-desktop.jpg" alt="">
+          <button class="addcart" data-item="Lemon Meringue Pie" data-price="5.00">
             <img src="assets/images/icon-add-to-cart.svg"  alt="">
             <p class="fw-200">Add to Cart</p>
           </button>
@@ -106,7 +107,7 @@
         </div>
         <div class="item">
           <img class="pic" src="assets/images/image-cake-desktop.jpg" alt="">
-          <button class="addcart">
+          <button class="addcart" data-item="Red Velvet Cake" data-price="4.50">
             <img src="assets/images/icon-add-to-cart.svg"  alt="">
             <p class="fw-200">Add to Cart</p>
           </button>
@@ -117,27 +118,37 @@
           
           
         </div>
+
+
         <div class="item">
           <img class="pic" src="assets/images/image-brownie-desktop.jpg" alt="">
-          <button class="addcart">
+          <button class="addcart" data-item="Salted Caramel Brownie" data-price="4.50">
             <img src="assets/images/icon-add-to-cart.svg"  alt="">
             <p class="fw-200">Add to Cart</p>
           </button>
           <div class="text"><p class="fw-100">Brownie</p>
           <p class="fw-200">Salted Caramel Brownie</p>
           <p class="fw-3">$4.50</p>
-          </div>
-          
-          
+          </div>  
         </div>
+
+
       </div>
     </div>
 
 
-    <div class="cart">
+    <div class="cart" id="cart">
 
-      <h1 class="fw-3">Your Cart</h1>
-      <p>Order Total</p>
+    <div class="order-head"><h1 class="fw-3">Your Cart</h1>
+        <button id="clear-cart" class="clear">
+          Clear Cart
+        </button></div>
+        
+      
+      <div id="cart-items">
+      </div>
+
+      <p id="ordertotal">Order Total: $0.00</p>
 
       <div class="eco">
         <p>This is a carbon neutral delivery</p>
@@ -146,6 +157,8 @@
       <button class="confirm">
         <h3>Confirm Order</h3>
       </button>
+
+      
       
     </div>
     
